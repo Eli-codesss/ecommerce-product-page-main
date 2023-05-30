@@ -103,6 +103,7 @@ li a:hover {
   #cart {
     width: 22px;
     cursor: pointer;
+    position: relative;
   }
 
   #profile {
@@ -110,6 +111,35 @@ li a:hover {
     height: 50px;
     cursor: pointer;
   }
+}
+
+#dropdown {
+  position: absolute;
+  border: 5px solid rgba(75, 89, 104, 0.562);
+  box-sizing: content-box;
+  width: 7em;
+  height: 6em;
+  padding: 1em;
+  background-color: rgba(75, 89, 104, 0.562);
+  display: none;
+}
+
+.cartmenu:hover {
+  #dropdown {
+    display: block;
+  }
+}
+
+.break1 {
+  position: absolute;
+  width: 7em;
+  top: 6em;
+}
+
+.break2 {
+  position: absolute;
+  width: 9em;
+  top: 6em;
 }
 
 .nav-left {
@@ -129,7 +159,7 @@ li a:hover {
 #product1,
 #product2,
 #product3,
-#product4{
+#product4 {
   display: flex;
   flex-direction: column;
 }
@@ -157,6 +187,9 @@ li a:hover {
 
 }
 
+#p1:hover {
+  opacity: 0.5;
+}
 
 #p5:hover {
   opacity: 0.5;
@@ -172,7 +205,6 @@ li a:hover {
 
 #p8:hover {
   opacity: 0.5;
-
 }
 
 #intro {

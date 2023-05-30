@@ -80,7 +80,9 @@ li a {
   cursor: pointer;
 }
 
-li a:hover {}
+li a:hover {
+  font-size: 1.1em;
+}
 
 .nav {
   width: 100%;
@@ -122,6 +124,14 @@ li a:hover {}
   display: flex;
   flex-direction: column;
 
+}
+
+#product1,
+#product2,
+#product3,
+#product4{
+  display: flex;
+  flex-direction: column;
 }
 
 #p1 {

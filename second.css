@@ -329,10 +329,13 @@ li a:hover {
   cursor: pointer;
 }
 
+#box4:hover{
+  flex-grow: 0.8;
+}
+
 #cart2 {
   width: 1.2em;
 }
-
 
 .img1body,
 .img2body,
@@ -449,5 +452,32 @@ li a:hover {
 
 #t4:hover {
   opacity: 0.5;
+}
 
+.collectionsbdy{
+
+  font-family: 'Kumbh Sans', sans-serif;
+  color: rgb(252, 152, 116);
+  display: flex;
+  flex-direction: row;
+  gap: 40%;
+};
+
+.shoeimages,
+.watchimages{
+  display: flex;
+}
+
+.collectioncolumn{
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+#s1:hover {
+  opacity: 0.5;
+}
+
+#c1:hover {
+  opacity: 0.5;
 }

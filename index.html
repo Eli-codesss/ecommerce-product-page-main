@@ -53,7 +53,26 @@
       </ul>
       <div class="nav-right">
         <a class="cartmenu"><img src="./images/icon-cart.svg" rel="icon" id="cart">
-          <p id="dropdown"> Cart</p>
+          <div id="dropdown">
+            <div class="line1">
+              <p>Cart <hr></p>
+            </div>
+            <div class="line2">
+              <section>
+                <img src="images/image-product-1-thumbnail.jpg" id="cart-thumbnail">
+              </section>
+            <section>
+            <p>Fall Limited Edition Sneakers</p>
+            <p><span id="price-content"></span> <span id="totalPrice"></span></p>
+          </section>
+          <section>
+           <button id="deleteCart"><img src="./images/icon-delete.svg" id="delete"></button>
+          </section>
+          </div>
+          <div class="line3">
+            <button class="checkout-btn">Checkout</button>
+          </div>
+        </div>
         </a>
         <img src="./images/image-avatar.png" rel="icon" id="profile"></a>
       </div>
@@ -84,18 +103,18 @@
         <p class="col-9">These low-profile sneakers are your perfect casual wear companion. Featuring a
           durable rubber outer sole, they’ll withstand everything the weather can offer.</p>
         <div class="price-1">
-          <p id="dollar-1"> $125.00 </p>
-          <p id="dollar-2"> 50%</p>
+          <b id="dollar">$</b><p id="dollar1"> 125.00 </p>
+          <p id="dollar2"> 50%</p>
         </div>
         <div class="price-2">
-          <p id="dollar-3"> $250.00</p>
+          <p id="dollar3"> $250.00</p>
         </div>
         <div class="price-3">
-          <p id="box1">-</p>
-          <p id="box2">0</p>
-          <p id="box3">+</p>
-          <p id="box4"> <img src="./images/icon-cart.svg" id="cart2"></a>
-            Add to cart</p>
+          <button id="box1" class="options">-</button>
+          <p id="box2" class="options">0</p>
+          <button id="box3" class="options">+</button>
+          <button id="box4" class="options"> <img src="./images/icon-cart.svg" id="cart2"></a>
+            Add to cart</button>
         </div>
       </div>
     </div>
@@ -104,6 +123,7 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="#">Elikplim</a>.
   </div>
+  <script src="second.js"></script>
 
 </body>
 

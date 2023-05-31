@@ -115,13 +115,43 @@ li a:hover {
 
 #dropdown {
   position: absolute;
-  border: 5px solid rgba(75, 89, 104, 0.562);
+  box-shadow: -1px 1px 10px #777777;
   box-sizing: content-box;
-  width: 7em;
-  height: 6em;
   padding: 1em;
-  background-color: rgba(75, 89, 104, 0.562);
+  background-color: rgb(255, 255, 255);
   display: none;
+  color: gray;
+}
+
+.checkout-btn{
+  display: flex;
+  background-color: rgb(252, 152, 116);
+  align-items: center;
+  border-radius: 0.3em;
+  color: white;
+  font-size: small;
+  flex-grow: 0.7;
+  justify-content: center;
+  gap: 0.5em;
+  cursor: pointer;
+  height: 3em;
+  width: 16em;
+  border-color: rgb(226, 171, 152);
+}
+
+#cart-thumbnail{
+  width: 2em;
+  border-radius: 0.3em;
+}
+
+.line2{
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+
+#totalPrice {
+  font-weight: bold;
 }
 
 .cartmenu:hover {
@@ -255,9 +285,18 @@ li a:hover {
 .price-3 {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
-#dollar-1 {
+#dollar {
+  font-weight: 600;
+  font-size: x-large;
+  margin-top: 0em;
+  margin-bottom: 0em;
+  align-items: center;
+}
+
+#dollar1 {
   font-weight: 600;
   font-size: x-large;
   margin-right: 0.5em;
@@ -266,7 +305,7 @@ li a:hover {
   align-items: center;
 }
 
-#dollar-2 {
+#dollar2 {
   font-size: x-small;
   align-items: center;
   background-color: rgb(245, 238, 220);
@@ -275,7 +314,7 @@ li a:hover {
 
 }
 
-#dollar-3 {
+#dollar3 {
   margin-top: 0;
   font-size: small;
   color: rgba(75, 89, 104, 0.562);
@@ -285,14 +324,15 @@ li a:hover {
 
 
 #box1 {
-  padding-left: 0.5em;
-  padding-right: 0.5em;
+  padding-left: 0.6em;
+  padding-right: 0.6em;
   padding-top: 0.3em;
   padding-bottom: 0.3em;
   background-color: hsl(223, 64%, 98%);
   color: hsl(25, 88%, 83%);
   border-radius: 0.3em;
   cursor: pointer;
+  border-color: hsl(225, 4%, 78%);
 }
 
 #box2 {
@@ -311,7 +351,7 @@ li a:hover {
   background-color: hsl(223, 64%, 98%);
   border-radius: 0.3em;
   cursor: pointer;
-
+  border-color: hsl(225, 4%, 78%);
 }
 
 #box4 {
@@ -327,11 +367,10 @@ li a:hover {
   justify-content: center;
   gap: 0.5em;
   cursor: pointer;
+  height: 3em;
+  border-color: rgb(226, 171, 152);
 }
 
-#box4:hover{
-  flex-grow: 0.8;
-}
 
 #cart2 {
   width: 1.2em;
@@ -480,4 +519,8 @@ li a:hover {
 
 #c1:hover {
   opacity: 0.5;
+}
+
+@media only screen and (max-width: 500px) {
+  
 }

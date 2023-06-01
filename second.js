@@ -37,6 +37,7 @@ let totalPrice = 0;
         totalPrice = box2.value * Number(price.innerText);
         cartBox.innerText =  `$${price.innerText} x ${box2.value}`;
         total.innerText = `$${totalPrice.toFixed(2)}`;
+        dropdown.style.display = "block";
 
     });
 

@@ -5,7 +5,7 @@
 @import url('https://fonts.google.com/specimen/Kumbh+Sans');
 
 body {
-  padding: 0% 10% 0% 10%;
+  padding: 0 10%;
   font-family: 'Kumbh Sans', sans-serif;
 }
 
@@ -92,11 +92,12 @@ li a:hover {
   border-style: solid;
   border-width: 0px 0px 1px 0px;
   border-color: rgb(231, 231, 231);
-
+  margin: 2em 0 2em 0;
+  padding: 0 0 0.5em 0;
 }
 
 .nav-right {
-  display: flex;
+  display: flex;;
   align-items: center;
   gap: 18px;
 
@@ -104,6 +105,7 @@ li a:hover {
     width: 22px;
     cursor: pointer;
     position: relative;
+    
   }
 
   #profile {
@@ -115,49 +117,45 @@ li a:hover {
 
 #dropdown {
   position: absolute;
+  top: 5rem;
   box-shadow: -1px 1px 10px #777777;
   box-sizing: content-box;
   padding: 1em;
   background-color: rgb(255, 255, 255);
   display: none;
   color: gray;
+  right: 1rem;
 }
 
 .checkout-btn{
-  display: flex;
-  background-color: rgb(252, 152, 116);
-  align-items: center;
+  background-color: rgb(248, 115, 66);
   border-radius: 0.3em;
   color: white;
   font-size: small;
-  flex-grow: 0.7;
-  justify-content: center;
-  gap: 0.5em;
   cursor: pointer;
-  height: 3em;
-  width: 16em;
-  border-color: rgb(226, 171, 152);
+  width: 100%;
+  padding: 0.5rem;
+  border: none;
 }
 
 #cart-thumbnail{
-  width: 2em;
+  width: 24px;
   border-radius: 0.3em;
 }
 
 .line2{
   display: flex;
   align-items: center;
-  gap: 1em;
+  font-size: .9rem;
+  gap: 1rem;
 }
 
 #totalPrice {
   font-weight: bold;
 }
 
-.cartmenu:hover {
-  #dropdown {
+.cartmenu:hover #dropdown {
     display: block;
-  }
 }
 
 .break1 {
@@ -237,11 +235,6 @@ li a:hover {
   opacity: 0.5;
 }
 
-#intro {
-  display: flex;
-
-}
-
 .sneak {
   color: rgb(252, 152, 116);
 }
@@ -264,17 +257,6 @@ li a:hover {
   flex-direction: row;
   justify-content: space-between;
 }
-
-/* 
-.grid > * {
-    flex-shrink: 0;
-    width: 100%;
-    max-width: 100%;
-    padding-right: calc(1.5rem * 0.5);
-    padding-left: calc(1.5rem * 0.5);
-    margin-top: 0;
-  } */
-
 
 .price-1 {
   display: flex;
@@ -336,10 +318,8 @@ li a:hover {
 }
 
 #box2 {
-  padding-left: 0.5em;
-  padding-right: 0.5em;
-  padding-top: 0.3em;
-  padding-bottom: 0.3em;
+  width: 2em;
+  padding: 0.25em;
 }
 
 #box3 {
@@ -358,7 +338,7 @@ li a:hover {
   display: flex;
   padding-left: 0.5em;
   padding-right: 0.5em;
-  background-color: rgb(252, 152, 116);
+  background-color: rgb(248, 115, 66);
   align-items: center;
   border-radius: 0.3em;
   color: white;
@@ -368,7 +348,7 @@ li a:hover {
   gap: 0.5em;
   cursor: pointer;
   height: 3em;
-  border-color: rgb(226, 171, 152);
+  border: none;
 }
 
 

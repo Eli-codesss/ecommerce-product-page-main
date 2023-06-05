@@ -151,22 +151,33 @@ li a:hover {
 }
 
 #cart-thumbnail{
-  width: 15%;
   border-radius: 0.3em;
 }
 
 .line2{
   display: flex;
   flex-direction: row;
-  align-items: center;
-  justify-content: center;
   font-size: .9rem;
   gap: 1rem;
+
+  width: 100%;
+  
+}
+#cart-thumbnail{
+  width: 2rem;
 }
 
-#cart-thumbnail{
 
- 
+.line2div1{
+  width: 2rem;
+  
+}
+.line2div2{
+  align-self: flex-end;
+}
+.line2div3{
+  width: 2rem;
+  height: 2rem;
 }
 
 #totalPrice {
@@ -521,7 +532,7 @@ li a:hover {
 }
 
 @media only screen and (max-width: 500px) {
-  
+ 
   .thumbnails{
     display:none;
   }
@@ -641,7 +652,8 @@ body{
 #input-num{
   display: flex;
   /* gap: 7rem; */
-  
+  justify-content: space-between;
+  width: 100%;
 }
 
 #box1{

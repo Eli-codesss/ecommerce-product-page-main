@@ -76,7 +76,6 @@ li a {
   padding: 3%;
   text-decoration: none;
   color: rgba(28, 36, 44, 0.562);
-  ;
   cursor: pointer;
 }
 
@@ -99,7 +98,7 @@ li a:hover {
 .nav-right {
   display: flex;;
   align-items: center;
-  gap: 18px;
+  gap: 20px;
 
   #cart {
     width: 22px;
@@ -114,8 +113,18 @@ li a:hover {
     cursor: pointer;
   }
 }
+
+
 #menu{
   display: none;
+}
+
+
+#menu-contents{
+  display: flex;;
+  align-items: center;
+  gap: 18px;
+  padding-left: 2rem;
 }
 
 #dropdown {
@@ -142,15 +151,22 @@ li a:hover {
 }
 
 #cart-thumbnail{
-  width: 24px;
+  width: 15%;
   border-radius: 0.3em;
 }
 
 .line2{
   display: flex;
+  flex-direction: row;
   align-items: center;
+  justify-content: center;
   font-size: .9rem;
   gap: 1rem;
+}
+
+#cart-thumbnail{
+
+ 
 }
 
 #totalPrice {
@@ -218,22 +234,10 @@ li a:hover {
 
 }
 
-#p1:hover {
-  opacity: 0.5;
-}
-
-#p5:hover {
-  opacity: 0.5;
-}
-
-#p6:hover {
-  opacity: 0.5;
-}
-
-#p7:hover {
-  opacity: 0.5;
-}
-
+#p1:hover,
+#p5:hover,
+#p6:hover,
+#p7:hover,
 #p8:hover {
   opacity: 0.5;
 }
@@ -251,7 +255,6 @@ li a:hover {
 
 #images {
   padding-top: 1.5em;
-
 }
 
 .thumbnails {
@@ -269,8 +272,28 @@ li a:hover {
 
 .price-3 {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  gap: 1rem;
+}
+
+#menu-close{
+  display: none;
+}
+
+#input-num{
+  display: flex;
+  gap: 1rem;
+}
+
+#add-to-cart{
+  display: flex;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  background-color: rgb(248, 115, 66);
+  border-radius: 0.3em;
+  width: 100%;
+  justify-content: center;
+  cursor: pointer;
 }
 
 #dollar {
@@ -306,7 +329,6 @@ li a:hover {
   text-decoration: line-through;
   font-weight: 600;
 }
-
 
 #box1 {
   padding-left: 0.6em;
@@ -346,14 +368,12 @@ li a:hover {
   border-radius: 0.3em;
   color: white;
   font-size: small;
-  flex-grow: 0.7;
   justify-content: center;
   gap: 0.5em;
   cursor: pointer;
   height: 3em;
   border: none;
 }
-
 
 #cart2 {
   width: 1.2em;
@@ -436,7 +456,6 @@ li a:hover {
   justify-content: flex-end;
 }
 
-
 #t1,
 #t2,
 #t3,
@@ -454,35 +473,37 @@ li a:hover {
   gap: 1em;
 }
 
-
-#t1:hover {
-  opacity: 0.5;
-}
-
-#t2:hover {
-  opacity: 0.5;
-}
-
-#t3:hover {
-  opacity: 0.5;
-}
-
+#t1:hover,
+#t2:hover,
+#t3:hover,
 #t4:hover {
   opacity: 0.5;
 }
 
 .collectionsbdy{
-
   font-family: 'Kumbh Sans', sans-serif;
   color: rgb(252, 152, 116);
+}
+
+.collectioncontainer{
   display: flex;
-  flex-direction: row;
-  gap: 40%;
+  flex-direction: column;
+  align-items: center;
+}
+
+.coldiv1 h1{
+  text-decoration: underline;
+  text-align: center;
+}
+
+.coldiv p{
+  text-align: center;
 }
 
 .shoeimages,
 .watchimages{
   display: flex;
+  flex-direction: column;
 }
 
 .collectioncolumn{
@@ -572,5 +593,60 @@ body{
   align-self: flex-end;
 
 }
+
+#menu-main{
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+#menu-contents{
+  position: absolute;
+  display: none; 
+  flex-direction: column;
+  background-color: rgb(255, 255, 255);
+  gap: 2rem;
+  top: 5rem;
+  padding: 1rem 3rem;
+  box-shadow: -1px 1px 10px #777777;
+  height: 100%;
+  font-weight: 800;
+  align-items: flex-start;
+
+}
+
+.collectioncolumn{
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+#menu-close{
+  display: block;
+}
+
+#closed{
+  margin-bottom: 2rem;
+}
+
+
+.price-3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+#input-num{
+  display: flex;
+  /* gap: 7rem; */
+  
+}
+
+#box1{
+
+}
+
 
 }

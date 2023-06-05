@@ -24,7 +24,7 @@
   </style>
 </head>
 
-<body>
+<body class="mainbody">
   <div>
     <div class="col-auto">
       <div class="col-1"></div>
@@ -43,13 +43,17 @@
     <div class="nav">
       <ul class="nav-left">
         <p>
-          <li><img src="./images/icon-menu.svg" rel="icon" type="image/svg" sizes="32x32" id="menu"></a></li>
-          <li><img src="./images/logo.svg" rel="icon" type="image/svg" sizes="32x32" id="logo"></a></li>
-          <li id="nav-list-1"><a href="./collections.html" target="_self">Collections</a></li>
-          <li id="nav-list-2"><a href="index.html">Men</a></li>
-          <li id="nav-list-3"><a href="index.html">Women</a></li>
-          <li id="nav-list-4"><a href="index.html">About</a></li>
-          <li id="nav-list-5"><a href="index.html">Contact</a></li>
+        <div id="menu-main"><li><img src="./images/icon-menu.svg" rel="icon" type="image/svg" sizes="32x32" id="menu"></a></li>
+          <li><img src="./images/logo.svg" rel="icon" type="image/svg" sizes="32x32" id="logo"></a></li></div>
+          <div id="menu-contents">
+          <a href="index.html" id="menu-close" target="_self">
+              <img src="./images/icon-close.svg" id="closed">
+          </a>
+          <li id="nav-list-1" class="nav-list"><a href="./collections.html" target="_self">Collections</a></li>
+          <li id="nav-list-2" class="nav-list"><a href="index.html">Men</a></li>
+          <li id="nav-list-3" class="nav-list"><a href="index.html">Women</a></li>
+          <li id="nav-list-4" class="nav-list"><a href="index.html">About</a></li>
+          <li id="nav-list-5" class="nav-list"><a href="index.html">Contact</a></li></div>
         </p>
       </ul>
       <div class="nav-right">
@@ -59,16 +63,16 @@
               <p>Cart <hr></p>
             </div>
             <div class="line2">
-              <section>
+              <div>
                 <img src="images/image-product-1-thumbnail.jpg" id="cart-thumbnail">
-              </section>
-              <section>
+              </div>
+              <div>
                 <p>Fall Limited Edition Sneakers</p>
                 <p><span id="price-content"></span> <span id="totalPrice"></span></p>
-              </section>
-              <section>
+              </div>
+              <div>
                 <button id="deleteCart"><a href="index.html"><img src="./images/icon-delete.svg" id="delete"></a></button>
-              </section>
+              </div>
             </div>
             <div class="line3">
               <button class="checkout-btn">Checkout</button>
@@ -113,11 +117,16 @@
         </div>
       </div>
         <div class="price-3">
+          <div id="input-num">
           <button id="box1" class="options">-</button>
           <input id="box2" class="options" placeholder="0"></input>
           <button id="box3" class="options">+</button>
-          <button id="box4" class="options"> <img src="./images/icon-cart.svg" id="cart2"></a>
-            Add to cart</button>
+          </div>
+          <div id="add-to-cart">
+          <button id="box4" class="options"> <img src="./images/icon-cart.svg" id="cart2">
+            Add to cart
+          </button>
+          </div>
         </div>
       </div>
     </div>

@@ -10,9 +10,14 @@ const box2 = document.getElementById("box2");
 const box3 = document.getElementById("box3");
 const box4 = document.getElementById("box4");
 const price = document.getElementById("dollar1");
+const menuBtn = document.getElementById("menu");
+const menuContents = document.getElementById("menu-contents");
 const deleteCart = document.getElementById("deleteCart");
+const menuClose = document.getElementById("menu-close");
 const cartIcon = document.querySelector(".cartmenu");
 const checkout = document.querySelector(".checkout-btn");
+const mainBody = document.querySelector(".mainbody")
+
 
 
 let count =  Number(box2.value);
@@ -49,6 +54,14 @@ let totalPrice = 0;
      checkout.addEventListener("click", function(){
          dropdown.style.display = "none"
          box2.value = 0;
+     })
+
+     menuBtn.addEventListener("touchstart", function(){
+         menuContents.style.display = "block"
+     })
+     
+     menuClose.addEventListener("touchstart", function(){
+         menuContents.style.display = "none"
      })
 
     // if(totalPrice === 0){

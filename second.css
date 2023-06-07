@@ -137,6 +137,7 @@ li a:hover {
   display: none;
   color: gray;
   right: 1rem;
+  z-index: 10;
 }
 
 .checkout-btn{
@@ -184,7 +185,7 @@ li a:hover {
   font-weight: bold;
 }
 
-.cartmenu:hover #dropdown {
+.cartmenu #dropdown {
     display: block;
 }
 
@@ -245,7 +246,6 @@ li a:hover {
 
 }
 
-#p1:hover,
 #p5:hover,
 #p6:hover,
 #p7:hover,
@@ -541,7 +541,7 @@ li a:hover {
   opacity: 0.5;
 }
 
-#c1:hover {
+#w1:hover {
   opacity: 0.5;
 }
 
@@ -552,10 +552,10 @@ li a:hover {
   }
 
   .flex-container{
-    display: flex;
+  display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  gap: 100px
+  justify-content: space-evenly;
+  /* gap: 100px */
   }
 
   
@@ -587,10 +587,6 @@ li a:hover {
   opacity: 1;
 }
 
-#p1:hover{
-  opacity: 1;
-}
-
 .sneak {
   padding: 0;
 }
@@ -613,12 +609,14 @@ body{
 }
 
 #intro{
-  padding: 0 3rem;
+  
+  padding: 25rem 3rem 0 3rem;
+  position: relative;
+  
 }
 
 .price-2{
   align-self: flex-end;
-
 }
 
 #menu-main{
@@ -640,7 +638,7 @@ body{
   height: 100%;
   font-weight: 800;
   align-items: flex-start;
-  z-index: 10;
+  z-index: 1000;
 }
 
 .collectioncolumn{
@@ -667,49 +665,52 @@ body{
 
 #input-num{
   display: flex;
-  /* gap: 7rem; */
   justify-content: space-between;
   width: 100%;
 }
 
-#prev1,
-#prev2,
-#prev3,
-#prev4{
+#prev1{
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  align-self: center;
   position: absolute;
   left: 0;
-  top: 60%;
+  top: 50%;
   border: 0.1em solid rgb(158, 158, 158);
   padding: 1em;
   border-radius: 100%;
   background-color: rgb(204, 201, 201);
+  z-index: 60;
 }
 
-#nxt1,
-#nxt2,
-#nxt3,
-#nxt4 {
+#nxt1{
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  align-self: center;
   position: absolute;
   right: 0;
-  top: 60%;
+  top: 50%;
   border: 0.1em solid rgb(158, 158, 158);
   padding: 1em;
   border-radius: 100%;
   background-color: rgb(204, 201, 201);
+  z-index: 60;
+
+}
+#images{
+  position: relative;
 }
 
-
-/* .row{
-  display: flex;
-  flex-direction: row;
+#container1{
+  position: absolute;
+  z-index: 20;
 }
- */
+#container2{
+  position: absolute;
+}
+#container3{
+  position: absolute; 
+}
+#container4{
+  position: absolute;
+}
+
 }

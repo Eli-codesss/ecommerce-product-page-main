@@ -394,7 +394,8 @@ li a:hover {
 .img2body,
 .img3body,
 .img4body {
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(5px);
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -432,6 +433,19 @@ li a:hover {
   flex-direction: row;
   justify-content: center;
   align-self: center;
+}
+
+#prev1,
+#prev2,
+#prev3,
+#prev4 {
+  display: none;
+}
+#nxt1,
+#nxt2,
+#nxt3,
+#nxt4 {
+  display: none;
 }
 
 #img1,
@@ -560,6 +574,8 @@ li a:hover {
 #product4{
   width: 100vw;
   border-radius: 0;
+  display: flex;
+  position: relative;
 }
 
 #p1,
@@ -624,7 +640,7 @@ body{
   height: 100%;
   font-weight: 800;
   align-items: flex-start;
-
+  z-index: 10;
 }
 
 .collectioncolumn{
@@ -656,9 +672,44 @@ body{
   width: 100%;
 }
 
-#box1{
+#prev1,
+#prev2,
+#prev3,
+#prev4{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-self: center;
+  position: absolute;
+  left: 0;
+  top: 60%;
+  border: 0.1em solid rgb(158, 158, 158);
+  padding: 1em;
+  border-radius: 100%;
+  background-color: rgb(204, 201, 201);
+}
 
+#nxt1,
+#nxt2,
+#nxt3,
+#nxt4 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-self: center;
+  position: absolute;
+  right: 0;
+  top: 60%;
+  border: 0.1em solid rgb(158, 158, 158);
+  padding: 1em;
+  border-radius: 100%;
+  background-color: rgb(204, 201, 201);
 }
 
 
+/* .row{
+  display: flex;
+  flex-direction: row;
+}
+ */
 }

@@ -35,8 +35,6 @@ const cartIcon = document.querySelector(".cartmenu");
 const checkout = document.querySelector(".checkout-btn");
 const mainBody = document.querySelector(".mainbody")
 
-
-
 let count =  Number(box2.value);
 let totalPrice = 0;
 let counter = 0;
@@ -82,21 +80,32 @@ let counter = 0;
          menuContents.style.display = "none"
      });
 
-     previousBtn1.addEventListener("touchstart", function(){
-        counter -= 1
+     previousBtn2.addEventListener("touchstart", function(){
+        counter = counter - 1;
         if(counter<0){
             counter = 0;
         }
      });
 
-     nextBtn1.addEventListener("touchstart", function(){
-        counter += 1
+     nextBtn2.addEventListener("touchstart", function(){
+        counter = counter + 1;
         if(counter>3){
             counter = 0;
         }
      });
 
-     do{
-        product2.style.zIndex = "20"
-     }while(counter===1);
+     if(counter===1){
+        product2.style.zIndex = "25"
+     }
+     else if (counter===2) {
+        product3.style.zIndex = "30"
+     } else if (counter===3) {
+        product4.style.zIndex = "35"
+     } else {
+        product1.style.zIndex = "20"
+        product2.style.zIndex = "0"
+        product3.style.zIndex = "0"
+        product4.style.zIndex = "0"
+     } 
 
+     

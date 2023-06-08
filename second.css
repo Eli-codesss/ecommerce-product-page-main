@@ -538,6 +538,15 @@ li a:hover {
   opacity: 0.5;
 }
 
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
 @media only screen and (max-width: 500px) {
  
   .thumbnails{

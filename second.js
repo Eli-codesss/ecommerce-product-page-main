@@ -14,23 +14,6 @@ const menuBtn = document.getElementById("menu");
 const menuContents = document.getElementById("menu-contents");
 const deleteCart = document.getElementById("deleteCart");
 const menuClose = document.getElementById("menu-close"); 
-const product1 = document.getElementById("product1");
-const product2 = document.getElementById("product2");
-const product3 = document.getElementById("product3");
-const product4 = document.getElementById("product4");
-const container1 = document.getElementById("container1");
-const container2 = document.getElementById("container2");
-const container3 = document.getElementById("container3");
-const container4 = document.getElementById("container4");
-const previousBtn1 = document.getElementById("prev1");
-const previousBtn2 = document.getElementById("prev2");
-const previousBtn3 = document.getElementById("prev3");
-const previousBtn4 = document.getElementById("prev4");
-const nextBtn1 = document.getElementById("nxt1");
-const nextBtn2 = document.getElementById("nxt2");
-const nextBtn3 = document.getElementById("nxt3");
-const nextBtn4 = document.getElementById("nxt4");
-const slide = document.getElementById("images");
 const cartIcon = document.querySelector(".cartmenu");
 const checkout = document.querySelector(".checkout-btn");
 const mainBody = document.querySelector(".mainbody")
@@ -80,32 +63,21 @@ let counter = 0;
          menuContents.style.display = "none"
      });
 
-     previousBtn2.addEventListener("touchstart", function(){
-        counter = counter - 1;
-        if(counter<0){
-            counter = 0;
-        }
-     });
+    
 
-     nextBtn2.addEventListener("touchstart", function(){
-        counter = counter + 1;
-        if(counter>3){
-            counter = 0;
-        }
-     });
+     var imgArray = [
+        'images/image-product-1.jpg',
+        'images/image-product-2.jpg',
+        'images/image-product-3.jpg',
+        'images/image-product-4.jpg'
+    ];
+    var curIndex = 0;
+    var imgDuration = 4000;
 
-     if(counter===1){
-        product2.style.zIndex = "25"
-     }
-     else if (counter===2) {
-        product3.style.zIndex = "30"
-     } else if (counter===3) {
-        product4.style.zIndex = "35"
-     } else {
-        product1.style.zIndex = "20"
-        product2.style.zIndex = "0"
-        product3.style.zIndex = "0"
-        product4.style.zIndex = "0"
-     } 
-
-     
+    function slideShow() {
+        document.getElementById('p1').src = imgArray[curIndex];
+        curIndex++;
+        if (curIndex == imgArray.length) { curIndex = 0; }
+        setTimeout("slideShow()", imgDuration);
+    }
+    slideShow();

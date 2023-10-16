@@ -47,4 +47,3 @@ Users would be able to:
 My sincere gratitude to:
 - Fredrick Yalley
 - Theophilus Gordon
-- Raphael Torsu
